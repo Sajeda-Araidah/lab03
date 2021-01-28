@@ -20,25 +20,28 @@ else if( NoFlower > 10) {
 document.getElementById("ordar").innerHTML= respose;
 confirm("Are you sure to buy it ?");
 alert("Thank you ");*/
+
+
 while (TypeOfFlower!== 'red' && TypeOfFlower !== 'yellow') {
     TypeOfFlower = prompt('what do you want red or yellow');
   }
   
-  var NoFlower = '';
+  var NoFlower1 = '';
   
   if (TypeOfFlower === 'red') {
-    NoFlower = '<img src="red.jpg"/>';
+    NoFlower1 = '<img src="red.jpg"/>';
   } else if (TypeOfFlower === 'yellow') {
-    NoFlower = '<img src="yellow.jpg"/>';
+    NoFlower1 = '<img style="width:500px; " src="yellow.jpg"/>';
   }
 
   var NoFlower = prompt("What Number of flowers?");
 
-var result = '';
+var result ;
 
 for (var i = 0; i <  NoFlower; i++) {
-  result = result + itemOrder;
+  result = result + NoFlower1;
 }
 
 document.getElementById("ordar").innerHTML=result;
+
 
