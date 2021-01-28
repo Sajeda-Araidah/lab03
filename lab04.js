@@ -1,9 +1,9 @@
 var TypeOfFlower = prompt("What The  Type Of Flowers You Want ?");
-var NoFlower = prompt("What Number of flowers?");
-var respose ;
+//var NoFlower = prompt("What Number of flowers?");
+//var respose ;
 
 
-if ( NoFlower > 3){
+/*if ( NoFlower > 3){
     respose ="You Will Get one more flower ";
 
 }else if( NoFlower > 5) {
@@ -19,4 +19,26 @@ else if( NoFlower > 10) {
 
 document.getElementById("ordar").innerHTML= respose;
 confirm("Are you sure to buy it ?");
-alert("Thank you ");
+alert("Thank you ");*/
+while (TypeOfFlower!== 'red' && TypeOfFlower !== 'yellow') {
+    TypeOfFlower = prompt('what do you want red or yellow');
+  }
+  
+  var NoFlower = '';
+  
+  if (TypeOfFlower === 'red') {
+    NoFlower = '<img src="red.jpg"/>';
+  } else if (TypeOfFlower === 'yellow') {
+    NoFlower = '<img src="yellow.jpg"/>';
+  }
+
+  var NoFlower = prompt("What Number of flowers?");
+
+var result = '';
+
+for (var i = 0; i <  NoFlower; i++) {
+  result = result + itemOrder;
+}
+
+document.getElementById("ordar").innerHTML=result;
+
