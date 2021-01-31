@@ -1,0 +1,47 @@
+header {
+font-family: Georgia,'Times New Roman', Times, serif; 
+ font-size:xx-large;
+ text-align:center;
+ background-color:rgb(167, 205, 238);
+padding: 50px;
+    
+ 
+ }
+
+nav  ul   {
+    background-color:rgb(240,248,255);
+    padding:  30px 0px;
+    margin-top: 0px;
+    text-align:center;
+
+    
+}
+li{
+     display: inline;
+      padding :20px;
+      font-family: Georgia,'Times New Roman', Times, serif; 
+    font-size:large;
+    
+
+}
+
+#ordar {
+background-color:red ; 
+color: white; 
+padding: 40px;
+}
+
+#ordar1 {
+
+    background-color:pink ;
+    color: white; 
+    padding: 40px;     
+}
+
+#ordar2 {
+
+    background-color:purple ;
+    color: white; 
+    padding: 40px;     
+}
+        

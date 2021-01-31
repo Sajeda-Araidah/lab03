@@ -1,6 +1,6 @@
-var TypeOfFlower = prompt("What The  Type Of Flowers You Want ?");
+/*var TypeOfFlower = prompt("What The  Type Of Flowers You Want ?");
 //var NoFlower = prompt("What Number of flowers?");
-//var respose ;
+var respose ;
 
 
 /*if ( NoFlower > 3){
@@ -19,9 +19,8 @@ else if( NoFlower > 10) {
 
 document.getElementById("ordar").innerHTML= respose;
 confirm("Are you sure to buy it ?");
-alert("Thank you ");*/
-
-
+alert("Thank you ");
+function  ToF (){
 while (TypeOfFlower!== 'red' && TypeOfFlower !== 'yellow') {
     TypeOfFlower = prompt('what do you want red or yellow');
   }
@@ -29,19 +28,38 @@ while (TypeOfFlower!== 'red' && TypeOfFlower !== 'yellow') {
   var NoFlower1 = '';
   
   if (TypeOfFlower === 'red') {
-    NoFlower1 = '<img src="red.jpg"/>';
+    NoFlower1 = '<img  style="width:100px ; background-color:red;" src="red.jpg"/>';
   } else if (TypeOfFlower === 'yellow') {
-    NoFlower1 = '<img style="width:500px; " src="yellow.jpg"/>';
+    NoFlower1 = '<img style="width:100px; background-color:yellow; " src="yellow.jpg"/>';
   }
 
   var NoFlower = prompt("What Number of flowers?");
 
-var result ;
-
+var result =' ' ;
 for (var i = 0; i <  NoFlower; i++) {
   result = result + NoFlower1;
 }
 
-document.getElementById("ordar").innerHTML=result;
+document.getElementById("ordar").innerHTML=result; }
 
+
+ToF ();*/
+
+TypeOfFlower = prompt('Which color you want ');
+confirm("Are you sure to buy it ?")
+
+function TTOf() {
+  if (TypeOfFlower=='red'  ){
+  respose ="You Buy  " +TypeOfFlower+" flower ";
+  document.getElementById("ordar").innerHTML=respose; }
+  else if(TypeOfFlower=='pink') {
+  respose ="You Buy  " +TypeOfFlower+" flower "; 
+  document.getElementById("ordar1").innerHTML=respose;}
+  else if(TypeOfFlower=='purple') {
+    respose ="You Buy  " +TypeOfFlower+" flower "; 
+    document.getElementById("ordar2").innerHTML=respose;}
+ 
+  }
+  
+TTOf();
 
